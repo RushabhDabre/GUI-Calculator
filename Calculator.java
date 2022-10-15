@@ -12,7 +12,7 @@ class Calculator extends Frame implements ActionListener, WindowListener {
 
     Calculator() {
         lb1 = new Label("Calculator");
-        txtnum1 = new TextField(50);
+        txtnum1 = new TextField(40);
 
         b1 = new Button("MC");
         b2 = new Button("MR");
@@ -47,15 +47,15 @@ class Calculator extends Frame implements ActionListener, WindowListener {
 
         p1 = new Panel();
         p2 = new Panel();
-        p3 = new Panel(new GridLayout(1,  6 , 10, 10));
-        p4 = new Panel(new GridLayout(1,  4 , 10, 10));
-        p5 = new Panel(new GridLayout(1,  4 , 10, 10));
-        p6 = new Panel(new GridLayout(1,  4 , 10, 10));
-        p7 = new Panel(new GridLayout(1,  4 , 10, 10));
-        p8 = new Panel(new GridLayout(1,  4 , 10, 10));
-		p9 = new Panel(new GridLayout(1,  4 , 10, 10));
+        p3 = new Panel(new GridLayout(1,  6 , 2, 2));
+        p4 = new Panel(new GridLayout(1,  4 , 2, 2));
+        p5 = new Panel(new GridLayout(1,  4 , 2, 2));
+        p6 = new Panel(new GridLayout(1,  4 , 2, 2));
+        p7 = new Panel(new GridLayout(1,  4 , 2, 2));
+        p8 = new Panel(new GridLayout(1,  4 , 2, 2));
+		    p9 = new Panel(new GridLayout(1,  4 , 2, 2));
 
-        mp = new Panel(new GridLayout(9, 1, 10, 10));
+        mp = new Panel(new GridLayout(9, 1, 2, 2));
 
         setLayout(new FlowLayout());
         p1.add(lb1);
@@ -86,7 +86,7 @@ class Calculator extends Frame implements ActionListener, WindowListener {
 
         p7.add(b19);
         p7.add(b20);
-		p7.add(b21);
+		    p7.add(b21);
         p7.add(b22);
 
         p8.add(b23);
@@ -111,8 +111,8 @@ class Calculator extends Frame implements ActionListener, WindowListener {
 
         add(mp);
         setTitle("Calculator");
-		setBounds(300, 300, 500, 500);
-		setVisible(true);
+		    setBounds(300, 300, 400, 360);
+		    setVisible(true);
 
     b1.addActionListener(this);
         b2.addActionListener(this);
