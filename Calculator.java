@@ -47,15 +47,15 @@ class Calculator extends Frame implements ActionListener, WindowListener {
 
         p1 = new Panel();
         p2 = new Panel();
-        p3 = new Panel(new GridLayout(1,  6 , 2, 2));
-        p4 = new Panel(new GridLayout(1,  4 , 2, 2));
-        p5 = new Panel(new GridLayout(1,  4 , 2, 2));
-        p6 = new Panel(new GridLayout(1,  4 , 2, 2));
-        p7 = new Panel(new GridLayout(1,  4 , 2, 2));
-        p8 = new Panel(new GridLayout(1,  4 , 2, 2));
-		    p9 = new Panel(new GridLayout(1,  4 , 2, 2));
+        p3 = new Panel(new GridLayout(1,  6 , 3, 3));
+        p4 = new Panel(new GridLayout(1,  4 , 3, 3));
+        p5 = new Panel(new GridLayout(1,  4 , 3, 3));
+        p6 = new Panel(new GridLayout(1,  4 , 3, 3));
+        p7 = new Panel(new GridLayout(1,  4 , 3, 3));
+        p8 = new Panel(new GridLayout(1,  4 , 3, 3));
+		    p9 = new Panel(new GridLayout(1,  4 , 3, 3));
 
-        mp = new Panel(new GridLayout(9, 1, 2, 2));
+        mp = new Panel(new GridLayout(9, 1, 3, 3));
 
         setLayout(new FlowLayout());
         p1.add(lb1);
